@@ -1,0 +1,13 @@
+{
+    "name": "butter-base-theme",
+    "description": "Butter base theme",
+    "version": "0.0.1",
+    "main": "index.css",
+    "scripts": {},
+    "dependencies": {},
+    "keywords": [ "butter", "theme", "css"],
+    "repository": "butterthemes/butter-base-theme",
+    "bugs": "https://github.com/butterthemes/butter-base-theme/issues",
+    "author": "Baltazar Gomez <btzr.io@gmail>",
+    "license": "GPL-3.0"
+}
