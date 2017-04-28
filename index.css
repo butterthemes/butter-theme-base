@@ -1,0 +1,22 @@
+.base-theme {
+
+    /* Background */
+    --Window-bg: #17181b;
+    
+    /* Nav */
+    --Navbar-bg: rgba(33,34,37,0.95);
+    
+    /* Main color */
+    --BASE-main-color: #2d72d9;
+    
+    /* Input */
+    --Input-bg: #121315;
+    
+    /* Font */
+    --Font: 'Arial', sans-serif;
+    
+    /* Button */
+    --Button-normal: #2d72d9;
+    --Button-active: #2468cc;
+    --Button-hover:  #225694;
+}
