@@ -1,5 +1,5 @@
 # butter-base-theme
-Base theme for butter-desktop app
+A base theme for butter-desktop app.
 
 
 ### Install 
