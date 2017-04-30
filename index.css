@@ -1,27 +1,30 @@
 .base-theme {
+    /* -- { Base } -- */
     
-    /* Main color */
+     /* Font */
+    --Font-family: 'Arial', sans-serif;
+    --Font-color: #FFF;
+    
+    /* Accent */
      --Main-color: #2d72d9;
-     
-    /* Window */
-    --Window-bg: #17181b;
    
+    /* -- { Window } -- */
+    --Window-bg: #17181b;
+    
     /* Window handler */
     --Window-handler-bg: transparent;
     --Window-handler-height: 33px;
     --Window-handler-shadow: none;
     
-    /* Navbar */
+    /* -- { Nav } -- */
     --Navbar-bg: rgba(33,34,37,0.95);
     --Navbar-shadow: none;
     
-    /* Tabs */
+    /* -- { Tabs } -- */
     --Tab-active: var(--Main-color)
     
-    /* Font */
-    --Font-family: 'Arial', sans-serif;
-    --Font-color: #FFF;
-    
+    /* -- { Actions } -- */
+   
     /* Input */
     --Input-bg: rgba(0, 0, 0, 0.5);
     --Input-color: var(--Font-color);
@@ -34,14 +37,20 @@
     --Button-shadow: none;
     --Button-radius: 5px;
     
+    /* Switch */
+    --Switch-default: transparent;
+    --Switch-active: var(--Main-color);
+    
+    /* -- { Misc } -- */
+    
+     /* Inactive */
+    --Inactive-alpha: 0.5;
+        
     /* Overlay */
     --Overlay-bg: var(--Window-bg);
     --Overlay-alpha: 0.5;
     
-    /* Inactive */
-    --Inactive-alpha: 0.5;
-    
-    /* Scrollbar */
+    /* -- { Scrollbar } -- */
     --Scrollbar-radius: 5px;
     --Scrollbar-default: #555;
     --Scrollbar-active: var(--Main-color);
