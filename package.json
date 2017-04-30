@@ -1,7 +1,7 @@
 {
     "name": "butter-base-theme",
-    "description": "Butter base theme",
-    "version": "0.0.1",
+    "description": "Butter-desktop app base theme.",
+    "version": "0.1.0",
     "main": "index.css",
     "scripts": {},
     "dependencies": {},
