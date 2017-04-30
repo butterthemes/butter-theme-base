@@ -3,8 +3,9 @@
     /* Background */
     --Window-bg: #17181b;
     
-    /* Nav */
+    /* Navbar */
     --Navbar-bg: rgba(33,34,37,0.95);
+    --Navbar-shadow: none;
     
     /* Main color */
     --Main-color: #2d72d9;
