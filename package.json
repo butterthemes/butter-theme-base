@@ -1,7 +1,7 @@
 {
-  "name": "butter-base-theme",
+  "name": "butter-theme-base",
   "description": "Butter-desktop app base theme.",
-  "version": "0.1.3",
+  "version": "0.1.0",
   "main": "index.css",
   "scripts": {},
   "dependencies": {},
@@ -10,8 +10,8 @@
     "theme",
     "css"
   ],
-  "repository": "butterthemes/butter-base-theme",
-  "bugs": "https://github.com/butterthemes/butter-base-theme/issues",
+  "repository": "butterthemes/butter-theme-base",
+  "bugs": "https://github.com/butterthemes/butter-theme-base/issues",
   "author": "Baltazar Gomez <btzr.io@gmail>",
   "license": "GPL-3.0"
 }
