@@ -11,17 +11,21 @@
     /* -- { Window } -- */
     --Window-bg: #17181b;
 
-    /* Window handler */
+    /* { Window-handler -> height: 33px } */
     --Window-handler-bg: transparent;
     --Window-handler-height: 33px;
     --Window-handler-shadow: none;
 
-    /* -- { Nav } -- */
+    /* -- { Nav -> height: 45px } -- */
     --Navbar-bg: rgba(33,34,37,0.95);
     --Navbar-shadow: none;
+    --Navbar-height: 45px;
 
-    /* -- { Tabs } -- */
+    /* -- { Tabs -> height:53px } -- */
+    --Tab-bg: var(--Navbar-bg);
     --Tab-active: var(--Main-color);
+    --Tab-color: var(--Font-color);
+    --Tab-shadow: none;
 
     /* -- { Actions } -- */
 
@@ -35,11 +39,18 @@
     --Button-bg: var(--Main-color);
     --Button-color: var(--Font-color);
     --Button-shadow: none;
-    --Button-radius: 5px;
+    --Button-radius: 3px;
 
     /* Switch */
     --Switch-default: transparent;
     --Switch-active: var(--Main-color);
+    
+     /* track */
+    --Dropdown-bg: var(--Input-bg);
+    --Dropdown-color: #FFF;
+    --Dropdown-open-bg: #FFF;
+    --Dropdown-open-color: #252525;
+    --Dropdown-radius: var(--Input-radius);
 
     /* -- { Misc } -- */
 
@@ -48,11 +59,12 @@
 
     /* Overlay */
     --Overlay-bg: var(--Window-bg);
-    --Overlay-alpha: 0.5;
+    --Overlay-alpha: 0.75;
 
     /* -- { Scrollbar } -- */
     --Scrollbar-size: 5px;
     --Scrollbar-radius: 5px;
+    --Scrollbar-margin: 5px;
 
     /* thumb */
     --Scrollbar-thumb-bg: var(--Main-color);
