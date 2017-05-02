@@ -38,7 +38,7 @@
     --Tab-color: var(--Font-color);
     
     /* Get tabs height */
-    --Tab-height: calc( var(--Tab-font-size) + var(--Tab-padding) * 2 + var(--Tab-border-size);
+    --Tab-height: calc( var(--Tab-font-size) + var(--Tab-padding) * 2 + var(--Tab-border-size) );
    
     /* -- { Actions } -- */
 
