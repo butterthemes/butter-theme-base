@@ -45,12 +45,18 @@
     --Switch-default: transparent;
     --Switch-active: var(--Main-color);
     
-     /* track */
+     /* Dropdown */
     --Dropdown-bg: var(--Input-bg);
     --Dropdown-color: #FFF;
     --Dropdown-open-bg: #FFF;
     --Dropdown-open-color: #252525;
     --Dropdown-radius: var(--Input-radius);
+    
+    /* Modal */
+    --Modal-bg: #FFF;
+    --Modal-color: #353535;
+    --Modal-radius: 3px;
+    --Modal-shadow: none;
 
     /* -- { Misc } -- */
 
