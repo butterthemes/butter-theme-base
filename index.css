@@ -11,18 +11,35 @@
     /* -- { Window } -- */
     --Window-bg: #17181b;
 
-    /* Window handler */
+    /* { Window-handler } */
     --Window-handler-bg: transparent;
-    --Window-handler-height: 33px;
     --Window-handler-shadow: none;
+    
+    /* Get & Set window handler's height */
+    --Window-handler-height: 33px;
 
     /* -- { Nav } -- */
     --Navbar-bg: rgba(33,34,37,0.95);
     --Navbar-shadow: none;
+    
+    /* Get &  Set Navbar's height */
+    --Navbar-height: 45px;
 
     /* -- { Tabs } -- */
+    --Tabs-bg: var(--Navbar-bg);
+    --Tabs-shadow: none;
+    
+    /* Tab-item */
+    --Tab-bg: transparent;
+    --Tab-border-size: 3px;
+    --Tab-font-size: 20px;
+    --Tab-padding: 15px;
     --Tab-active: var(--Main-color);
-
+    --Tab-color: var(--Font-color);
+    
+    /* Get tabs height */
+    --Tab-height: calc( var(--Tab-font-size) + var(--Tab-padding) * 2 + var(--Tab-border-size) );
+   
     /* -- { Actions } -- */
 
     /* Input */
@@ -35,11 +52,24 @@
     --Button-bg: var(--Main-color);
     --Button-color: var(--Font-color);
     --Button-shadow: none;
-    --Button-radius: 5px;
+    --Button-radius: 3px;
 
     /* Switch */
     --Switch-default: transparent;
     --Switch-active: var(--Main-color);
+    
+     /* Dropdown */
+    --Dropdown-bg: var(--Input-bg);
+    --Dropdown-color: #FFF;
+    --Dropdown-open-bg: #FFF;
+    --Dropdown-open-color: #252525;
+    --Dropdown-radius: var(--Input-radius);
+    
+    /* Modal */
+    --Modal-bg: #FFF;
+    --Modal-color: #353535;
+    --Modal-radius: 3px;
+    --Modal-shadow: none;
 
     /* -- { Misc } -- */
 
@@ -48,16 +78,19 @@
 
     /* Overlay */
     --Overlay-bg: var(--Window-bg);
-    --Overlay-alpha: 0.5;
+    --Overlay-alpha: 0.75;
 
     /* -- { Scrollbar } -- */
     --Scrollbar-size: 5px;
     --Scrollbar-radius: 5px;
+    --Scrollbar-margin: 5px;
 
     /* thumb */
     --Scrollbar-thumb-bg: var(--Main-color);
     --Scrollbar-thumb-hover: var(--Main-color);
+    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
 
     /* track */
     --Scrollbar-track-bg: transparent;
+    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
 }
