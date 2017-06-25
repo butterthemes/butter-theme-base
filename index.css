@@ -52,7 +52,7 @@
     --Button-bg: var(--Main-color);
     --Button-color: var(--Font-color);
     --Button-shadow: none;
-    --Button-radius: 3px;
+    --Button-radius: 0px;
 
     /* Switch */
     --Switch-default: transparent;
@@ -68,7 +68,7 @@
     /* Modal */
     --Modal-bg: #FFF;
     --Modal-color: #353535;
-    --Modal-radius: 3px;
+    --Modal-radius: 0px;
     --Modal-shadow: none;
 
     /* -- { Misc } -- */
@@ -81,9 +81,9 @@
     --Overlay-alpha: 0.75;
 
     /* -- { Scrollbar } -- */
-    --Scrollbar-size: 5px;
-    --Scrollbar-radius: 5px;
     --Scrollbar-margin: 5px;
+    --Scrollbar-size: 5px;
+    --Scrollbar-radius: 0px;
 
     /* thumb */
     --Scrollbar-thumb-bg: var(--Main-color);
@@ -92,5 +92,5 @@
 
     /* track */
     --Scrollbar-track-bg: transparent;
-    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
+    --Scrollbar-track-radius: var(--Scrollbar-radius);
 }
