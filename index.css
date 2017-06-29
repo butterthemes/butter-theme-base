@@ -96,4 +96,21 @@
     /* track */
     --Scrollbar-track-bg: transparent;
     --Scrollbar-track-radius: var(--Scrollbar-radius);
+    
+  /* { Init CSS } */
+   background: var(--Window-bg);
+   color: var(--Font-color);
+   font-family: var(--Font-family)
+}
+
+* {
+    border: 0;
+    list-style: none; 
+    outline: 0;
+    text-decoration: none;
+}
+
+a, a:hover { 
+    color: var(--Font-color);
+    text-decoration: none;
 }
