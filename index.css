@@ -2,7 +2,8 @@
     /* -- { Base } -- */
 
      /* Font */
-    --Font-family: 'Arial', sans-serif;
+    --Font-normal: 'Arial', sans-serif;
+    --Font-title: 'Dosis', sans-serif;
     --Font-color: #FFF;
     
     /* Common */
@@ -56,6 +57,14 @@
     --Button-color: var(--Font-color);
     --Button-radius: var(--Common-radius);
     --Button-shadow: none;
+   
+    /* Button:active */
+    --Button-active-bg: var(--Main-color);
+    --Button-active-color: var(--Button-color);
+    
+    /* Button:hover */
+    --Button-hover-bg: var(--Main-color);
+    --Button-hover-color: var(--Button-color);
 
     /* Switch */
     --Switch-default: transparent;
@@ -100,7 +109,7 @@
   /* { Init CSS } */
    background: var(--Window-bg);
    color: var(--Font-color);
-   font-family: var(--Font-family)
+   font-family: var(--Font-normal)
 }
 
 * {
