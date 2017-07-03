@@ -7,27 +7,28 @@
     --Font-color: #FFF;
     
     /* Common */
+    --Common-dark: rgba(0, 0, 0, 0.35);
+    --Common-light: rgba(255, 255, 255, 0.35);
     --Common-radius: 3px;
     
     /* Accent */
      --Main-color: #2d72d9;
+    
+     /* -- { Nav } -- */
+    --Navbar-bg: rgba(33,34,37,0.95);
+    --Navbar-shadow: none;
+    /* Get &  Set Navbar's height */
+    --Navbar-height: 45px;
 
     /* -- { Window } -- */
     --Window-bg: #17181b;
 
     /* { Window-handler } */
-    --Window-handler-bg: transparent;
+    --Window-handler-bg: var(--Navbar-bg);
     --Window-handler-shadow: none;
     
     /* Get & Set window handler's height */
     --Window-handler-height: 33px;
-
-    /* -- { Nav } -- */
-    --Navbar-bg: rgba(33,34,37,0.95);
-    --Navbar-shadow: none;
-    
-    /* Get &  Set Navbar's height */
-    --Navbar-height: 45px;
 
     /* -- { Tabs } -- */
     --Tabs-bg: var(--Navbar-bg);
@@ -47,7 +48,7 @@
     /* -- { Actions } -- */
 
     /* Input */
-    --Input-bg: rgba(0, 0, 0, 0.5);
+    --Input-bg: var(--Common-dark);
     --Input-color: var(--Font-color);
     --Input-radius: var(--Common-radius);
     --Input-shadow: none;
@@ -71,11 +72,13 @@
     --Switch-active: var(--Main-color);
     
      /* Dropdown */
-    --Dropdown-bg: var(--Input-bg);
-    --Dropdown-color: #FFF;
+    --Dropdown-bg: var(--Common-dark);
+    --Dropdown-color: var(--Font-color);
+    --Dropdown-radius: var(--Common-radius);
+    
+    /* Dropdown:open */
     --Dropdown-open-bg: #FFF;
     --Dropdown-open-color: #252525;
-    --Dropdown-radius: var(--Common-radius);
     
     /* Modal */
     --Modal-bg: #FFF;
@@ -98,12 +101,17 @@
     --Scrollbar-radius: 5px;
 
     /* thumb */
-    --Scrollbar-thumb-bg: var(--Main-color);
-    --Scrollbar-thumb-hover: var(--Main-color);
-    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
+    --Scrollbar-thumb-bg:  var(--Common-light);
+    --Scrollbar-thumb-radius: var( --Scrollbar-radius);
+    
+    /* thumb:hover */
+    --Scrollbar-thumb-hover-bg: var(--Common-light);
+    
+    /* thumb:active */
+    --Scrollbar-thumb-active-bg: var(--Main-color);
 
     /* track */
-    --Scrollbar-track-bg: transparent;
+    --Scrollbar-track-bg: var(--Common-dark);
     --Scrollbar-track-radius: var(--Scrollbar-radius);
     
   /* { Init CSS } */
@@ -112,6 +120,7 @@
    font-family: var(--Font-normal)
 }
 
+/* All */
 * {
     border: 0;
     list-style: none; 
@@ -119,7 +128,40 @@
     text-decoration: none;
 }
 
+/* Link */
 a, a:hover { 
     color: var(--Font-color);
     text-decoration: none;
+}
+
+/* { Scrollbar } */
+
+::-webkit-scrollbar {
+     width: var( --Scrollbar-size );
+}
+
+::-webkit-scrollbar-track {
+    background-color: var( --Scrollbar-track-bg );
+    border-radius: var( --Scrollbar-track-radius );
+    margin: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var( --Scrollbar-thumb-bg );
+    border-radius: var( --Scrollbar-thumb-radius );
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var( --Scrollbar-thumb-hover-bg );
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var( --Scrollbar-thumb-active-bg );
+}
+
+::-webkit-resizer,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece { 
+    display: none;
 }
