@@ -1,39 +1,39 @@
 :root {
-    /* -- { Base } -- */
-
+    
      /* Font */
     --Font-normal: 'Arial', sans-serif;
     --Font-title: 'Dosis', sans-serif;
     --Font-color: #FFF;
     
     /* Common */
+    --Common-dark: rgba(0, 0, 0, 0.35);
+    --Common-light: rgba(255, 255, 255, 0.35);
     --Common-radius: 3px;
     
     /* Accent */
      --Main-color: #2d72d9;
-
-    /* -- { Window } -- */
-    --Window-bg: #17181b;
-
-    /* { Window-handler } */
-    --Window-handler-bg: transparent;
-    --Window-handler-shadow: none;
     
-    /* Get & Set window handler's height */
-    --Window-handler-height: 33px;
-
-    /* -- { Nav } -- */
+     /* Navbar */
     --Navbar-bg: rgba(33,34,37,0.95);
     --Navbar-shadow: none;
-    
-    /* Get &  Set Navbar's height */
+    /* Navbar -> Get &  Set Navbar's height */
     --Navbar-height: 45px;
 
-    /* -- { Tabs } -- */
+    /* Window */
+    --Window-bg: #17181b;
+
+    /* Window -> handler  */
+    --Window-handler-bg: var(--Navbar-bg);
+    --Window-handler-shadow: none;
+    
+    /* Window -> Get & Set window handler's height */
+    --Window-handler-height: 33px;
+
+    /* Tabs */
     --Tabs-bg: var(--Navbar-bg);
     --Tabs-shadow: none;
     
-    /* Tab-item */
+    /* Tabs -> Tab-item */
     --Tab-bg: transparent;
     --Tab-border-size: 3px;
     --Tab-font-size: 20px;
@@ -41,16 +41,20 @@
     --Tab-active: var(--Main-color);
     --Tab-color: var(--Font-color);
     
-    /* Get tabs height */
+    /* Tabs -> Get tabs height */
     --Tabs-height: calc( var(--Tab-font-size) + var(--Tab-padding) * 2 + var(--Tab-border-size) );
-   
-    /* -- { Actions } -- */
 
     /* Input */
-    --Input-bg: rgba(0, 0, 0, 0.5);
+    --Input-bg: var(--Common-dark);
+    --Input-border: 0;
     --Input-color: var(--Font-color);
+    --Input-outline: 0;
     --Input-radius: var(--Common-radius);
     --Input-shadow: none;
+    
+    /* Input:focus */
+     --Input-focus-bg: var(--Common-dark);
+     --Input-focus-color: var(--Font-color);
 
     /* Button */
     --Button-bg: var(--Main-color);
@@ -71,19 +75,19 @@
     --Switch-active: var(--Main-color);
     
      /* Dropdown */
-    --Dropdown-bg: var(--Input-bg);
-    --Dropdown-color: #FFF;
+    --Dropdown-bg: var(--Common-dark);
+    --Dropdown-color: var(--Font-color);
+    --Dropdown-radius: var(--Common-radius);
+    
+    /* Dropdown:open */
     --Dropdown-open-bg: #FFF;
     --Dropdown-open-color: #252525;
-    --Dropdown-radius: var(--Common-radius);
     
     /* Modal */
     --Modal-bg: #FFF;
     --Modal-color: #353535;
     --Modal-radius: var(--Common-radius);
     --Modal-shadow: none;
-
-    /* -- { Misc } -- */
 
      /* Inactive */
     --Inactive-alpha: 0.5;
@@ -92,28 +96,33 @@
     --Overlay-bg: var(--Window-bg);
     --Overlay-alpha: 0.75;
 
-    /* -- { Scrollbar } -- */
+    /* -- Scrollbar -- */
     --Scrollbar-margin: 5px;
     --Scrollbar-size: 5px;
     --Scrollbar-radius: 5px;
 
-    /* thumb */
-    --Scrollbar-thumb-bg: var(--Main-color);
-    --Scrollbar-thumb-hover: var(--Main-color);
-    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
-
-    /* track */
-    --Scrollbar-track-bg: transparent;
-    --Scrollbar-track-radius: var(--Scrollbar-radius);
+    /* Scrollbar -> thumb */
+    --Scrollbar-thumb-bg:  var(--Common-light);
+    --Scrollbar-thumb-radius: var( --Scrollbar-radius);
     
-  /* { Init CSS } */
+    /* Scrollbar -> thumb:hover */
+    --Scrollbar-thumb-hover-bg: var(--Common-light);
+    
+    /* Scrollbar -> thumb:active */
+    --Scrollbar-thumb-active-bg: var(--Main-color);
+
+    /* Scrollbar -> track */
+    --Scrollbar-track-bg: var(--Common-dark);
+    --Scrollbar-track-radius: var(--Scrollbar-radius);
+}
+
+html {
    background: var(--Window-bg);
    color: var(--Font-color);
-   font-family: var(--Font-normal)
+   font-family: var(--Font-normal);
 }
 
 * {
-    border: 0;
     list-style: none; 
     outline: 0;
     text-decoration: none;
@@ -122,4 +131,54 @@
 a, a:hover { 
     color: var(--Font-color);
     text-decoration: none;
+    border: 0;
 }
+
+::-webkit-scrollbar {
+     width: var( --Scrollbar-size );
+}
+
+::-webkit-scrollbar-track {
+    background-color: var( --Scrollbar-track-bg );
+    border-radius: var( --Scrollbar-track-radius );
+    margin: 5px 0;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var( --Scrollbar-thumb-bg );
+    border-radius: var( --Scrollbar-thumb-radius );
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: var( --Scrollbar-thumb-hover-bg );
+}
+
+::-webkit-scrollbar-thumb:active {
+    background-color: var( --Scrollbar-thumb-active-bg );
+}
+
+::-webkit-resizer,
+::-webkit-scrollbar-corner,
+::-webkit-scrollbar-button,
+::-webkit-scrollbar-track-piece { 
+    display: none;
+}
+
+input[type~="text"],
+input[type~="number"],
+input[type~="password"] {
+    background: var(--Input-bg);
+    border:  var(--Input-border);
+    border-radius: var(--Input-radius);
+    box-shadow: var(--Input-shadow);
+    color: #FFF;
+    font-size:  0.95em;
+    font-weight: normal;
+    line-height: 0.70em;
+    outline: var(--Input-outline);
+    padding: 7px 15px;
+    transition: background .2s ease;
+    width: 199px;
+}
+
+
