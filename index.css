@@ -49,9 +49,15 @@
 
     /* Input */
     --Input-bg: var(--Common-dark);
+    --Input-border: 0;
     --Input-color: var(--Font-color);
+    --Input-outline: 0;
     --Input-radius: var(--Common-radius);
     --Input-shadow: none;
+    
+    /* Input:focus */
+     --Input-focus-bg: var(--Common-dark);
+     --Input-focus-color: var(--Font-color);
 
     /* Button */
     --Button-bg: var(--Main-color);
@@ -113,29 +119,28 @@
     /* track */
     --Scrollbar-track-bg: var(--Common-dark);
     --Scrollbar-track-radius: var(--Scrollbar-radius);
-    
-  /* { Init CSS } */
-   background: var(--Window-bg);
-   color: var(--Font-color);
-   font-family: var(--Font-normal)
 }
 
-/* All */
+html {
+   background: var(--Window-bg);
+   color: var(--Font-color);
+   font-family: var(--Font-normal);
+}
+
 * {
-    border: 0;
     list-style: none; 
     outline: 0;
     text-decoration: none;
 }
 
-/* Link */
+/* { Link }  */
 a, a:hover { 
     color: var(--Font-color);
     text-decoration: none;
+    border: 0;
 }
 
 /* { Scrollbar } */
-
 ::-webkit-scrollbar {
      width: var( --Scrollbar-size );
 }
@@ -165,3 +170,23 @@ a, a:hover {
 ::-webkit-scrollbar-track-piece { 
     display: none;
 }
+
+/* { Input } */
+input[type~="text"],
+input[type~="number"],
+input[type~="password"] {
+    background: var(--Input-bg);
+    border:  var(--Input-border);
+    border-radius: var(--Input-radius);
+    box-shadow: var(--Input-shadow);
+    color: #FFF;
+    font-size:  0.95em;
+    font-weight: normal;
+    line-height: 0.70em;
+    outline: var(--Input-outline);
+    padding: 7px 15px;
+    transition: background .2s ease;
+    width: 199px;
+}
+
+
