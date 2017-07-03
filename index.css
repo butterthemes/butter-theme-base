@@ -1,6 +1,5 @@
 :root {
-    /* -- { Base } -- */
-
+    
      /* Font */
     --Font-normal: 'Arial', sans-serif;
     --Font-title: 'Dosis', sans-serif;
@@ -14,27 +13,27 @@
     /* Accent */
      --Main-color: #2d72d9;
     
-     /* -- { Nav } -- */
+     /* Navbar */
     --Navbar-bg: rgba(33,34,37,0.95);
     --Navbar-shadow: none;
-    /* Get &  Set Navbar's height */
+    /* Navbar -> Get &  Set Navbar's height */
     --Navbar-height: 45px;
 
-    /* -- { Window } -- */
+    /* Window */
     --Window-bg: #17181b;
 
-    /* { Window-handler } */
+    /* Window -> handler  */
     --Window-handler-bg: var(--Navbar-bg);
     --Window-handler-shadow: none;
     
-    /* Get & Set window handler's height */
+    /* Window -> Get & Set window handler's height */
     --Window-handler-height: 33px;
 
-    /* -- { Tabs } -- */
+    /* Tabs */
     --Tabs-bg: var(--Navbar-bg);
     --Tabs-shadow: none;
     
-    /* Tab-item */
+    /* Tabs -> Tab-item */
     --Tab-bg: transparent;
     --Tab-border-size: 3px;
     --Tab-font-size: 20px;
@@ -42,10 +41,8 @@
     --Tab-active: var(--Main-color);
     --Tab-color: var(--Font-color);
     
-    /* Get tabs height */
+    /* Tabs -> Get tabs height */
     --Tabs-height: calc( var(--Tab-font-size) + var(--Tab-padding) * 2 + var(--Tab-border-size) );
-   
-    /* -- { Actions } -- */
 
     /* Input */
     --Input-bg: var(--Common-dark);
@@ -92,8 +89,6 @@
     --Modal-radius: var(--Common-radius);
     --Modal-shadow: none;
 
-    /* -- { Misc } -- */
-
      /* Inactive */
     --Inactive-alpha: 0.5;
 
@@ -101,22 +96,22 @@
     --Overlay-bg: var(--Window-bg);
     --Overlay-alpha: 0.75;
 
-    /* -- { Scrollbar } -- */
+    /* -- Scrollbar -- */
     --Scrollbar-margin: 5px;
     --Scrollbar-size: 5px;
     --Scrollbar-radius: 5px;
 
-    /* thumb */
+    /* Scrollbar -> thumb */
     --Scrollbar-thumb-bg:  var(--Common-light);
     --Scrollbar-thumb-radius: var( --Scrollbar-radius);
     
-    /* thumb:hover */
+    /* Scrollbar -> thumb:hover */
     --Scrollbar-thumb-hover-bg: var(--Common-light);
     
-    /* thumb:active */
+    /* Scrollbar -> thumb:active */
     --Scrollbar-thumb-active-bg: var(--Main-color);
 
-    /* track */
+    /* Scrollbar -> track */
     --Scrollbar-track-bg: var(--Common-dark);
     --Scrollbar-track-radius: var(--Scrollbar-radius);
 }
@@ -133,14 +128,12 @@ html {
     text-decoration: none;
 }
 
-/* { Link }  */
 a, a:hover { 
     color: var(--Font-color);
     text-decoration: none;
     border: 0;
 }
 
-/* { Scrollbar } */
 ::-webkit-scrollbar {
      width: var( --Scrollbar-size );
 }
@@ -171,7 +164,6 @@ a, a:hover {
     display: none;
 }
 
-/* { Input } */
 input[type~="text"],
 input[type~="number"],
 input[type~="password"] {
