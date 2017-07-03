@@ -102,8 +102,8 @@
     --Scrollbar-radius: 5px;
 
     /* Scrollbar -> thumb */
-    --Scrollbar-thumb-bg:  var(--Common-light);
-    --Scrollbar-thumb-radius: var( --Scrollbar-radius);
+    --Scrollbar-thumb-bg: var(--Common-light);
+    --Scrollbar-thumb-radius: var(--Scrollbar-radius);
     
     /* Scrollbar -> thumb:hover */
     --Scrollbar-thumb-hover-bg: var(--Common-light);
@@ -135,26 +135,26 @@ a, a:hover {
 }
 
 ::-webkit-scrollbar {
-     width: var( --Scrollbar-size );
+     width: var(--Scrollbar-size);
 }
 
 ::-webkit-scrollbar-track {
-    background-color: var( --Scrollbar-track-bg );
-    border-radius: var( --Scrollbar-track-radius );
+    background-color: var(--Scrollbar-track-bg);
+    border-radius: var(--Scrollbar-track-radius);
     margin: 5px 0;
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: var( --Scrollbar-thumb-bg );
-    border-radius: var( --Scrollbar-thumb-radius );
+    background-color: var(--Scrollbar-thumb-bg);
+    border-radius: var(--Scrollbar-thumb-radius);
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: var( --Scrollbar-thumb-hover-bg );
+    background-color: var(--Scrollbar-thumb-hover-bg);
 }
 
 ::-webkit-scrollbar-thumb:active {
-    background-color: var( --Scrollbar-thumb-active-bg );
+    background-color: var(--Scrollbar-thumb-active-bg);
 }
 
 ::-webkit-resizer,
