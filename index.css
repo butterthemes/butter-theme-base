@@ -87,7 +87,6 @@
     
     /* Modal */
     --Modal-bg: #FFF;
-    --Modal-border: var(--Common-border);
     --Modal-color: #353535;
     --Modal-radius: var(--Common-radius);
     --Modal-shadow: none;
