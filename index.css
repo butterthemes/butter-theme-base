@@ -50,7 +50,7 @@
     --Input-color: var(--Font-color);
     --Input-outline: 0;
     --Input-radius: var(--Common-radius);
-    --Input-shadow: 0px 0px 1px solid rgba(0, 0, 0, 0.75);
+    --Input-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.75);
     
     /* Input:focus */
      --Input-focus-bg: var(--Common-dark);
@@ -61,7 +61,7 @@
     --Button-border: var(--Common-border);
     --Button-color: var(--Font-color);
     --Button-radius: var(--Common-radius);
-    --Button-shadow: 0px 0px 1px solid rgba(0, 0, 0, 0.75);
+    --Button-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.75);
    
     /* Button:active */
     --Button-active-bg: var(--Main-color);
@@ -79,7 +79,7 @@
     --Dropdown-bg: var(--Common-dark);
     --Dropdown-color: var(--Font-color);
     --Dropdown-radius: var(--Common-radius);
-    --Dropdown-shadow: 0px 0px 1px solid rgba(0, 0, 0, 0.75);
+    --Dropdown-shadow: inset 0px 0px 1px rgba(0, 0, 0, 0.75);
     
     /* Dropdown:open */
     --Dropdown-open-bg: #FFF;
