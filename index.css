@@ -1,7 +1,7 @@
 :root {
     
      /* Font */
-    --Font-normal: 'Arial', sans-serif;
+    --Font-normal: 'Arial', 'Helvetica', sans-serif;
     --Font-title: 'Dosis', sans-serif;
     --Font-color: #FFF;
     
@@ -114,17 +114,15 @@
     /* Scrollbar -> track */
     --Scrollbar-track-bg: var(--Common-dark);
     --Scrollbar-track-radius: var(--Scrollbar-radius);
-}
-
-html {
-   background: var(--Window-bg);
-   color: var(--Font-color);
-   font-family: var(--Font-normal);
+    
+    /* Global css */
+    background: var(--Window-bg);
+    color: var(--Font-color);
+    font-family: var(--Font-normal);
 }
 
 * {
     list-style: none; 
-    outline: 0;
     text-decoration: none;
 }
 
