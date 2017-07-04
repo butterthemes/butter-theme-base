@@ -6,9 +6,11 @@
     --Font-color: #FFF;
     
     /* Common */
+    --Common-border:  1px solid rgba(0, 0, 0, 0.85);
     --Common-dark: rgba(0, 0, 0, 0.35);
     --Common-light: rgba(255, 255, 255, 0.35);
     --Common-radius: 3px;
+   
     
     /* Accent */
      --Main-color: #2d72d9;
@@ -46,7 +48,7 @@
 
     /* Input */
     --Input-bg: var(--Common-dark);
-    --Input-border: 0;
+    --Input-border: var(--Common-border);
     --Input-color: var(--Font-color);
     --Input-outline: 0;
     --Input-radius: var(--Common-radius);
@@ -58,6 +60,7 @@
 
     /* Button */
     --Button-bg: var(--Main-color);
+    --Button-border: var(--Common-border);
     --Button-color: var(--Font-color);
     --Button-radius: var(--Common-radius);
     --Button-shadow: none;
@@ -76,8 +79,10 @@
     
      /* Dropdown */
     --Dropdown-bg: var(--Common-dark);
+    --Dropdown-border: var(--Common-border);
     --Dropdown-color: var(--Font-color);
     --Dropdown-radius: var(--Common-radius);
+    --Dropdown-shadow: none;
     
     /* Dropdown:open */
     --Dropdown-open-bg: #FFF;
@@ -85,6 +90,7 @@
     
     /* Modal */
     --Modal-bg: #FFF;
+    --Modal-border: var(--Common-border);
     --Modal-color: #353535;
     --Modal-radius: var(--Common-radius);
     --Modal-shadow: none;
@@ -116,7 +122,7 @@
     --Scrollbar-track-radius: var(--Scrollbar-radius);
     
     /* Global css */
-    background: var(--Window-bg);
+    background-color: var(--Window-bg);
     color: var(--Font-color);
     font-family: var(--Font-normal);
 }
