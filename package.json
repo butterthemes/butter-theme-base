@@ -2,9 +2,11 @@
   "name": "butter-theme-base",
   "description": "Butter-desktop app base theme.",
   "version": "0.1.0",
-  "main": "index.css",
+  "main": "index.js",
   "scripts": {},
-  "dependencies": {},
+  "dependencies": {
+    "typeface-dosis": "^0.0.54"
+  },
   "keywords": [
     "butter",
     "theme",
